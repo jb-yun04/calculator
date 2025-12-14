@@ -1,4 +1,5 @@
 #include <stdio.h>
+//202413361 윤정빈 과제 수정
 #include <stdlib.h>
 #include "stack.h"
 #include <string.h>
@@ -73,4 +74,5 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
