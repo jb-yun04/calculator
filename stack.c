@@ -1,5 +1,4 @@
 #include <stdio.h>
-//202413361 윤정빈 과제 수정
 #include <stdlib.h>
 #include "stack.h"
 #include <string.h>
@@ -30,6 +29,8 @@ bool is_full(Stack * stack)
 
 void push(Stack * stack, Item i)
 {
+	//202413361 윤정빈 최종 과제 수정본
+	printf("### [202413361 윤정빈] psuh() 함수 실행 확인\n"); //<--수정한 부분
 	if (stack->top>=stack->size-1)
 		reallocate(stack);
 	stack->contents[stack->top++] = i;
@@ -74,5 +75,6 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
 
