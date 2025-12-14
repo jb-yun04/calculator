@@ -1,9 +1,10 @@
 #ifndef STACK_H
 #define STACK_H
 #include <stdbool.h> 
-// stach.h 수정 완료
 
 typedef int Item;
+//코드 수정본
+typedef int StudentID_202413361; //<-- 수정한 부분
 typedef struct stack {
 Item * contents;
 int top;
@@ -21,3 +22,4 @@ static void stack_underflow(void);
 static void reallocate(Stack * stack);
 
 #endif
+
